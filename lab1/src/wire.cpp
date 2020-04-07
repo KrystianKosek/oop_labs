@@ -90,7 +90,7 @@ QuantumWire::operator int (){
     return quantity;
 }
         
-bool QuantumWire::operator () (QuantumWire wire1, QuantumWire wire2){
+bool QuantumWire::operator () (const QuantumWire wire1, const QuantumWire wire2){
     if(wire1.length > wire2.length)
         return true;
     return false;

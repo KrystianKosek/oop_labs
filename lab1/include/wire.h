@@ -55,7 +55,7 @@ class QuantumWire {
         /*
             Przeładowany operator () realizujący predykat
         */
-        bool operator () (QuantumWire, QuantumWire);
+        bool operator () (const QuantumWire, const QuantumWire);
 
         /*
             Przeładowany operator << drukujący obiekt QuantumWire
