@@ -13,21 +13,13 @@ public:
     }
 
     // konstruktory
-    Virus()
-    {
-        name = "";
-        RNA = nullptr;
-        age = 0;
-    }
-    Virus(string name) : name(name)
-    {
-        RNA = nullptr;
-        age = 0;
-    }
-    Virus(Virus &copy) : name(copy.name), RNA(new GeneSeq(copy.RNA->get_sequence()))
+    Virus() : name(""), RNA(nullptr), age(0) {}
+
+    Virus(string name) : name(name), RNA(nullptr), age(0) {}
+
+    Virus(Virus &copy) : name(copy.name), RNA(new GeneSeq(copy.RNA->get_sequence())), age(0)
     {
         copy.age++;
-        age = 0;
     }
 
     Virus(Virus &&copy) : name(move(copy.name)), RNA(move(copy.RNA)), age(move(copy.age))

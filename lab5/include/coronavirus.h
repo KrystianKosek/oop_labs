@@ -6,25 +6,12 @@ class CoronaVirus : public Virus
 {
 public:
     // konstruktory, wywołują konstruktory klasy matki (Virus) i ustawiają wartość giverName
-    CoronaVirus() : Virus()
-    {
-        giverName = "";
-    }
-    CoronaVirus(string name, string giverName, const std::vector<Nucleotide> seq) : Virus(name)
-    {
-        this->giverName = giverName;
+    CoronaVirus() : Virus(), giverName("") {}
+    CoronaVirus(string name, string giverName, const std::vector<Nucleotide> seq) : Virus(name), giverName(giverName) {
         RNA = new GeneSeq(seq);
     }
-
-    CoronaVirus(CoronaVirus &copy) : Virus(copy)
-    {
-        giverName = copy.giverName;
-    }
-
-    CoronaVirus(CoronaVirus &&copy) : Virus(std::move(copy))
-    {
-        giverName = move(copy.giverName);
-    }
+    CoronaVirus(CoronaVirus &copy) : Virus(copy), giverName(copy.giverName) {}
+    CoronaVirus(CoronaVirus &&copy) : Virus(std::move(copy)), giverName(copy.giverName) {}
 
     // zwraca nazwe dawcy
     string get_animal_host()
