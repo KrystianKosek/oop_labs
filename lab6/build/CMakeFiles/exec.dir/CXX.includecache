@@ -1,0 +1,74 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/bacteria.h
+organism.h
+../include/organism.h
+gene_utils.h
+../include/gene_utils.h
+
+../include/coronavirus.h
+virus.h
+../include/virus.h
+
+../include/dna.h
+gene_sequence.h
+../include/gene_sequence.h
+
+../include/gene_sequence.h
+vector
+-
+ostream
+-
+
+../include/gene_utils.h
+vector
+-
+algorithm
+-
+organism.h
+../include/organism.h
+virus.h
+../include/virus.h
+
+../include/organism.h
+iostream
+-
+dna.h
+../include/dna.h
+
+../include/protozoa.h
+organism.h
+../include/organism.h
+gene_utils.h
+../include/gene_utils.h
+
+../include/virus.h
+iostream
+-
+gene_sequence.h
+../include/gene_sequence.h
+
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/main.cpp
+iostream
+-
+dna.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/dna.h
+coronavirus.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/coronavirus.h
+organism.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/organism.h
+bacteria.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/bacteria.h
+protozoa.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/protozoa.h
+
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/src/gene_sequence.cpp
+gene_sequence.h
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/src/gene_sequence.h
+

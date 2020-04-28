@@ -1,0 +1,5 @@
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/build/CMakeFiles/check.dir
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/build/CMakeFiles/exec.dir
+/mnt/c/Users/kryst/Desktop/Studia AGH/Semestr 4/Programowanie obiektowe 1/lab6/build/CMakeFiles/run.dir
