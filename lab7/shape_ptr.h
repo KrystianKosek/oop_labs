@@ -27,6 +27,7 @@ class Shape_ptr{
             }
             return *this;
         }
+        
         Shape_ptr& operator = (Shape *&another){
             if(another != ptr){
                 ptr = another;

@@ -5,7 +5,6 @@
 #include <functional>
 
 // Zadeklarowany alias pt "Program"
-// (Tutaj zmarnowałem najwięcej czasu, bo wpadnięcie na to zajeło mi około 30minut)
 typedef std::vector<std::function<std::vector<double>()>> Program;
 
 class Coordinates {
@@ -19,7 +18,7 @@ class Coordinates {
         Coordinates(double lat, double lng) : lat(lat), lng(lng) {}
         Coordinates(std::vector<double> vec) : lat(vec[0]), lng(vec[1]) {}
         
-        // Operator += oraz -= ( Nigdzie nie używane ale zakładam, że działają tak jak trzeba :) )
+        // Operator += oraz -=
         Coordinates & operator += (double val){
             lat += val;
             lng += val;
@@ -68,7 +67,6 @@ std::vector<double> operator - (const Coordinates & vec1, const Coordinates & ve
 
 // Przestrzeń nazw MarsRouter,
 // zawierająca dwie funkcje, które zwracają nasz alias pt "Program" 
-// (stosunkowo proste, tylko w mainie nie było ani slowa wytłumaczone jak to ma działać)
 namespace MarsRoutes{
     // zwraca vector trzech wyrażeń lambda
     Program route1(){
